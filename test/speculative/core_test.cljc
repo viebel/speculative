@@ -89,6 +89,7 @@
 (deftest merge-with-test
   (with-instrumentation `merge-with
     (is (merge-with + {}))
+    (is (nil? (merge-with +)))
     (is (merge-with + {} nil))
     (is (nil? (merge-with + nil)))
     (throws `merge-with (merge-with 1))))

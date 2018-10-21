@@ -1,7 +1,9 @@
 {:paths ["resources" "src"]
  :deps {org.clojure/clojure {:mvn/version "RELEASE"}
         org.clojure/test.check {:mvn/version "RELEASE"}
-        org.clojure/clojurescript {:mvn/version "RELEASE"}
+        org.clojure/clojurescript {:git/url "https://github.com/clojure/clojurescript"
+                                   :sha "6eedd0a08c49f7b0d4dcb30977b2fb38c90577bd"
+#_#_:mvn/version "RELEASE"}
         net.cgrand/macrovich {:mvn/version "0.2.1"}}
  :aliases
  {:test {:extra-paths ["test"]
