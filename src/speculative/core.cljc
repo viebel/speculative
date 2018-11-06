@@ -3,7 +3,7 @@
   (:require [clojure.spec.alpha :as s]
             [clojure.spec.gen.alpha :as gen]
             [clojure.spec.test.alpha :as stest]
-            [workarounds-1-10-439.core]))
+            #_[workarounds-1-10-439.core]))
 
 (defn reducible? [x]
   #?(:clj
